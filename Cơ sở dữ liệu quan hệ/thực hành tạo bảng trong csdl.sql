@@ -1,0 +1,1 @@
+SELECT * FROM ql_giaovien.bomon;
