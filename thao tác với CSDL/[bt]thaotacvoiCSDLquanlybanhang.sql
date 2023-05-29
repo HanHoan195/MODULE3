@@ -45,4 +45,8 @@ select o1.oid, o1.odate, sum(od.odqty * p.pprice) as totalprice
 from orderdetail od join order1 o1 on od.oid = o1.oid
 join product p on od.pid = p.pid
 group by o1.oid, o1.odate;
+<<<<<<< HEAD
+=======
+
+>>>>>>> e30729dcf46faff3c7e8f5f0fda3f4d4767fe28a
 
