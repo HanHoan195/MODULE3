@@ -39,4 +39,11 @@ join product p on p.pid = odd.pid;
 -- Hiển thị tên những khách hàng không mua bất kỳ một sản phẩm nào
 select cname from customer where cid not in (select cid from order1);-- truy vấn con	
 
+-- Hiển thị mã hóa đơn, ngày bán và giá tiền của từng hóa đơn 
+-- (giá một hóa đơn được tính bằng tổng giá bán của từng loại mặt hàng xuất hiện trong hóa đơn. Giá bán của từng loại được tính = odQTY*pPrice)
+select o1.oid, o1.odate, sum(od.odqty * p.pprice) as totalprice
+from orderdetail od join order1 o1 on od.oid = o1.oid
+join product p on od.pid = p.pid
+group by o1.oid, o1.odate;
+
 
