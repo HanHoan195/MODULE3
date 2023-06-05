@@ -1,0 +1,34 @@
+.content{
+    height: 100vh;
+}
+.form-check-input:checked{
+    background:#673AB7;
+    border-color:#673AB7 ;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(90deg, #9C27B0, #673AB7);
+}
+.fa{
+    padding: 11px;
+    width: 38px;
+    text-align: center;
+    text-decoration: none;
+    margin: 1px 3px;
+    border-radius: 50%;
+}
+.fa-facebook{
+    background: #097ae4;
+    color: #fff;
+}
+.fa-google{
+    background:#dd4b39;
+    color: #fff;
+}
+.fa-github{
+    background: rgb(14, 12, 12);
+    color: #fff;
+}
+.btn{
+    width: 100%;
+}
