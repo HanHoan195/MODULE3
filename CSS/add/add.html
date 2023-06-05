@@ -1,69 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="add.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Add Person Form</title>
+    <link rel="stylesheet" type="text/css" href="add.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
-    <!-- <div class="container">
-        <div>Add Person <label for="">☓</label></div>
-        <hr>
-        <div class="input1">
-            <div class="name col-3">First Name </div> 
-                <input type="text" class="col-9">
-                       
-        </div>
-        <div class="input1">
-            <div class="name col-3">Last Name </div> 
-                <input type="text" class="col-9">
-                       
-        </div>
-        
-        <div class="input1">
-            <div>Address</div> 
-                <textarea name="" id="" cols="" rows="2"></textarea>                       
+    <div class="container">
+        <div class="add-form">
+            <h2>Add Person</h2>
+            <div class="form-group row">
+                <label for="firstname" class="col-3">First Name </label>
+                <div class="col-9">
+                    <input type="text" class="form-control" placeholder="First Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="lastname" class="col-3">Last Name </label>
+                <div class="col-9">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="gender" class="col-3">Gender </label>
+                <div class="col-9">
+                    <select name="gender" id="" class="form-control">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="address" class="col-3">Address </label>
+                <div class="col-9">
+                    <textarea name="" id="" class="form-control" rows="2" placeholder="Address"></textarea>
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label for="birth" class="col-3">Date of birth </label>
+                <div class="col-9">
+                    <input type="date" class="form-control">
+                </div>
+            </div>
         </div>
 
-    </div> -->
+        <div class="footer">
+            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-danger">Cancel</button>
+        </div>
 
-    <form>
-        <div class="form-group row">
-          <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">First Name</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="First Name">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="colFormLabel" class="col-sm-2 col-form-label">Last Name</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="colFormLabel" placeholder="Last Name">
-          </div>
-        </div>
-        <div class="form-group row">
-            <div class="gender col-3">Gender</div>
-                <select name="" id="" class="select col-9">
-                    <option value="nam">Nam</option>
-                    <option value="nu">Nữ</option>
-                    <option value="khac">Khác</option>
-                </select>           
-        </div>
-        <div class="form-group row">
-          <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
-          </div>
-        </div>
-      </form>
+        <!-- <form>
+            <table class="table">
+                <tr>
+                    <td><label for="firstName">First Name</label></td>
+                    <td><input type="text" class="form-control" id="firstName" placeholder="First name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lastName">Last Name</label></td>
+                    <td><input type="text" class="form-control" id="lastName" placeholder="Last name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <select class="form-control" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><input type="text" class="form-control" id="address" placeholder="Address" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dateOfBirth">Date of Birth</label></td>
+                    <td><input type="date" class="form-control" id="dateOfBirth" required></td>
+                </tr>
+            </table>
+            <div class="footer">
+                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-danger">Cancel</button>
+            </div>
 
+        </form> -->
+    </div>
 </body>
 
 </html>

@@ -1,94 +1,55 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Add Person Form</title>
-    <link rel="stylesheet" type="text/css" href="add.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<title>Đăng nhập</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="">
 </head>
-
 <body>
-    <div class="container">
-        <div class="add-form">
-            <h2>Add Person</h2>
-            <div class="form-group row">
-                <label for="firstname" class="col-3">First Name </label>
-                <div class="col-9">
-                    <input type="text" class="form-control" placeholder="First Name">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="lastname" class="col-3">Last Name </label>
-                <div class="col-9">
-                    <input type="text" class="form-control" placeholder="Last Name">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="gender" class="col-3">Gender </label>
-                <div class="col-9">
-                    <select name="gender" id="" class="form-control">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="address" class="col-3">Address </label>
-                <div class="col-9">
-                    <textarea name="" id="" class="form-control" rows="2" placeholder="Address"></textarea>
-                </div>
+	<section class="container">
+        <div class="row content d-flex justify-content-center align-items-center">
+            <div class="col-md-5">
+                <div class="box shadow bg-white p-4">
+                    <h3 class="mb-4 text-center fs-1">LOGIN</h3>
+                    <form action="" class="mb-3">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control rounder-0" id="floatingInput" placeholder="Username or Email">                            
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control rounder-0" id="floatingInput" placeholder="Password">                            
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" id = "autosizingcheck2" class="form-check-input">        
+                            <label for="" class="frrom-check-label">Remember me</label>
+                        </div>
+                        <div class="d-grid gap-2 mb3">
+                            <button type="button" class="btn btn-primary btn-lg border-0 rounder-0">Login</button>
+                        </div>
+                        <div class="forgot-password-link mb-3 text-right">
+                            <a href="#" title="Forgot Password" class="text-decoration-none"> Forgot Password</a>
+                        </div>
+                    </form>
+                    <div class="sign-up-accounts">
+                        <p class="text-center">Don't have accounts or sign up</p>
+                        <div class="social-accounts d-flex justify-content-center">
+                            <a href="#" title="Facebook"> <i class="fa fa-facebook"></i></a>
+                            <a href="#" title="Google"><i class="fa fa-google"></i></a>
+                            <a href="#" title="Github"> <i class="fa fa-github"></i></i></a>
+                        </div>
+                    </div>
 
-            </div>
-            <div class="form-group row">
-                <label for="birth" class="col-3">Date of birth </label>
-                <div class="col-9">
-                    <input type="date" class="form-control">
                 </div>
             </div>
+
         </div>
 
-        <div class="footer">
-            <button type="submit" class="btn btn-primary">Save</button>
-            <button type="button" class="btn btn-danger">Cancel</button>
-        </div>
-
-        <!-- <form>
-            <table class="table">
-                <tr>
-                    <td><label for="firstName">First Name</label></td>
-                    <td><input type="text" class="form-control" id="firstName" placeholder="First name" required></td>
-                </tr>
-                <tr>
-                    <td><label for="lastName">Last Name</label></td>
-                    <td><input type="text" class="form-control" id="lastName" placeholder="Last name" required></td>
-                </tr>
-                <tr>
-                    <td><label for="gender">Gender</label></td>
-                    <td>
-                        <select class="form-control" id="gender">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="address">Address</label></td>
-                    <td><input type="text" class="form-control" id="address" placeholder="Address" required></td>
-                </tr>
-                <tr>
-                    <td><label for="dateOfBirth">Date of Birth</label></td>
-                    <td><input type="date" class="form-control" id="dateOfBirth" required></td>
-                </tr>
-            </table>
-            <div class="footer">
-                <button type="submit" class="btn btn-primary">Save</button>
-                <button type="button" class="btn btn-danger">Cancel</button>
-            </div>
-
-        </form> -->
-    </div>
+    </section>
 </body>
-
 </html>
