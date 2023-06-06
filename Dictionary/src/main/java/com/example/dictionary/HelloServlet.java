@@ -29,8 +29,10 @@ public class HelloServlet extends HttpServlet {
         dictionary.put("how", "Thế nào");
         dictionary.put("book", "Quyển vở");
         dictionary.put("computer", "Máy tính");
+
         String search = req.getParameter("txtSearch");
         PrintWriter writer = resp.getWriter();
+
         writer.println("<html>");
         String result = dictionary.get(search);
         if (result != null) {
