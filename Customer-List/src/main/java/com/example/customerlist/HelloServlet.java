@@ -1,10 +1,13 @@
 package com.example.customerlist;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
+@WebServlet(name = "helloServlet", value = "/customer")
 public class HelloServlet extends HttpServlet {
     private String message;
 
@@ -12,14 +15,17 @@ public class HelloServlet extends HttpServlet {
         message = "Hello World!";
     }
 
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html");
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
-        // Hello
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
-        out.println("</body></html>");
+        List<Customer> customers = new ArrayList<>();
+        customers.add(new Customer(1,"Hoàn", "huế","1995-05-19"));
+        customers.add(new Customer(2,"Đạt", "huế","1999-05-19"));
+        customers.add(new Customer(3,"Thi", "huế","2000-05-19"));
+
+        request.setAttribute("customers", customers);
+
+        request.getRequestDispatcher("customer.jsp").forward(request, response);
+
     }
 
     public void destroy() {

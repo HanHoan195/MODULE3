@@ -9,7 +9,28 @@
 <h1>
     <%= "Danh sách khách hàng" %>
 </h1>
-<a href="/customer">Danh sách khách hàng</a>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Tên</th>
+        <th scope="col">Ngày sinh</th>
+        <th scope="col">Địa chỉ</th>
+    </tr>
+    </thead>
+    <tbody>
+    <c:forEach var="customer" items="${customers}">
+        <tr>
+
+            <td>${customer.name}</td>
+            <td>${customer.dob}</td>
+            <td>${customer.address}</td>
+        </tr>
+    </c:forEach>
+
+
+
+    </tbody>
+</table>
 
 </body>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
